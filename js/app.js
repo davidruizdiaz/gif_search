@@ -5,9 +5,10 @@ const limitInput = $("#limit");
 const cardContainer = $( 'section.row' )
 const card = $( '#results' );
 const searchInput = $( '#searchInput' );
-const searchBtn = $( 'button' ).click( buscar );
 const searchTextLabel = $( '#searchText' );
 const cantTextLabel = $( '#cant' );
+
+$( 'button.btn-primary' ).click( buscar );
 
 async function buscar () {
 	const searchText = searchInput.val();
