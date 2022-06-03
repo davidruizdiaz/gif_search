@@ -17,7 +17,7 @@ async function buscar () {
 		const { results } = await $.getJSON( `${URLBASE}q=${queryText}&media_filter=tinygif&limit=${limit}&key=${APIKEY}` );
         mostrar( searchText, limit, results );
 	} catch( err ) {
-		console.log( err.responseJSON.error.message
+		console.log( err.responseJSON.error.message );
 	}
 }
 
